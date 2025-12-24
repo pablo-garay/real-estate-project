@@ -1,9 +1,12 @@
+https://realtechnologyinvestments.org
+# Copyright (c) 2024.  All rights reserved.
+
 ================================================================================
-REAL TECHNOLOGY INVESTMENT GROUP - COMPLETE WEBSITE BACKUP
+REAL TECHNOLOGY - WEBSITE
 ================================================================================
 
-This is a complete portable backup of the website from:
-https://realtechnologyinvestments.org/
+This is a complete portable website, initially uploaded at :
+https://realtechnologyinvestments.org
 
 All pages have been downloaded with full content from the live site.
 
