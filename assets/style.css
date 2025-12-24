@@ -1,0 +1,143 @@
+/*
+ Theme Name:     OfficeHUB
+ Theme URI:      https://officehub.gregorythemes.com/
+ Description:    Premium Coworking Divi Child Theme
+ Author:         Gregory THEMES
+ Author URI:     https://gregorythemes.com/
+ Template:       Divi
+ Version:        1.0.1
+ License:     	 GNU General Public License v2 or later
+ License URI: 	 http://www.gnu.org/licenses/gpl-2.0.html
+*/
+
+
+/*----------Theme CSS----------*/
+
+/* Mobile Menu */
+header .et_mobile_menu {
+	margin-top: 10px;
+}
+
+header .et_mobile_menu .menu-item-has-children > a {
+	background-color: transparent!important;
+	position: relative;
+}
+
+.et_mobile_menu li a:hover, .nav ul li a:hover {
+	background-color: transparent!important;
+}
+
+header .et_mobile_menu .menu-item-has-children > a:after {
+	font-family: 'ETmodules';
+	text-align: center;
+	position: absolute;
+}
+
+header .et_mobile_menu .menu-item-has-children > a:after {
+	font-size: 16px;
+	content: '\4c';
+	top: 10px!important;
+	right: 10px!important;
+}
+
+header .et_mobile_menu .menu-item-has-children.visible > a:after {
+	content: '\4d';
+}
+
+header .et_mobile_menu ul.sub-menu, .et-db #et-boc .et-l .et_pb_menu .et_mobile_menu li ul {
+	display: none!important;
+	visibility: hidden!important;
+	transition: all 1.5s ease-in-out;
+}
+
+header .et_mobile_menu .visible > ul.sub-menu, .et-db #et-boc .et-l .et_pb_menu .et_mobile_menu .visible > ul {
+	display: block!important;
+	visibility: visible!important;
+}
+
+/* Blurb Style 1 */
+.gt_blurb_style1 .et_pb_blurb_container {
+	padding: 0 30px 30px 30px;
+}
+
+.gt_blurb_style1 .et_pb_blurb_content {
+	max-width: 100%;
+}
+
+/* Pricing Table */
+.et_pb_column_4_4 .et_pb_pricing_3.gt_pricing .et_pb_pricing_table {
+	max-width: 31%;
+	padding: 30px;
+}
+
+.gt_pricing .et_pb_pricing_table_wrap {
+	justify-content: space-between;
+}
+
+.gt_pricing .et_pb_frequency {
+	display: block;
+}
+
+.gt_pricing .et_pb_frequency_slash {
+	display: none;
+}
+
+.gt_pricing .et_pb_dollar_sign {
+	margin-left: -25px!important;
+}
+
+@media (max-width: 980px) {
+	.et_pb_column .gt_pricing .et_pb_pricing_table {
+   	 	width: 100%!important;
+   	 	max-width: 100%!important;
+		margin: 0 0 30px!important;
+	}
+}
+
+/* Inline Partners Logos */
+@media (max-width: 479px) {
+    .gt_inline_logo .et_pb_column {
+        width: 33%!important;
+    }
+}
+
+/* Accordion */
+.gt_accordion .et_pb_toggle_title:before {
+	content: "\4c";
+}
+
+/* Team Member */
+.gt_team_member .et_pb_team_member_description {
+	opacity: 0;
+	transition: opacity 300ms ease 0ms;
+	-ms-flex: 0;
+    flex: 0;
+}
+
+.gt_team_member:hover .et_pb_team_member_description {
+	opacity: 1;
+}
+
+/* Blog */
+.gt_blog .et_pb_post {
+	 transition: transform 300ms ease 0ms,box-shadow 300ms ease 0ms;
+}
+
+.gt_blog .et_pb_post:hover {
+	transform: translateX(0px) translateY(-10px)!important;
+}
+
+.gt_blog .et_pb_post .entry-featured-image-url {
+	border-radius: 15px;
+	box-shadow: 0px 2px 18px 0px rgba(0,0,0,0.15);
+    transition: transform 300ms ease 0ms,box-shadow 300ms ease 0ms;
+}
+
+.gt_blog .et_pb_post:hover .entry-featured-image-url {
+	box-shadow: 0px 2px 18px 0px rgba(0,0,0,0.30);
+}
+
+/* Button Padding */
+.et_button_no_icon.et_button_icon_visible.et_button_left .et_pb_button, .et_button_no_icon.et_button_icon_visible.et_button_left.woocommerce #content input.button, .et_button_no_icon.et_button_icon_visible.et_button_left.woocommerce #content input.button.alt, .et_button_no_icon.et_button_icon_visible.et_button_left.woocommerce #respond input#submit, .et_button_no_icon.et_button_icon_visible.et_button_left.woocommerce #respond input#submit.alt, .et_button_no_icon.et_button_icon_visible.et_button_left.woocommerce-page #content input.button, .et_button_no_icon.et_button_icon_visible.et_button_left.woocommerce-page #content input.button.alt, .et_button_no_icon.et_button_icon_visible.et_button_left.woocommerce-page #respond input#submit, .et_button_no_icon.et_button_icon_visible.et_button_left.woocommerce-page #respond input#submit.alt, .et_button_no_icon.et_button_icon_visible.et_button_left.woocommerce-page a.button, .et_button_no_icon.et_button_icon_visible.et_button_left.woocommerce-page a.button.alt, .et_button_no_icon.et_button_icon_visible.et_button_left.woocommerce-page button.button, .et_button_no_icon.et_button_icon_visible.et_button_left.woocommerce-page button.button.alt, .et_button_no_icon.et_button_icon_visible.et_button_left.woocommerce-page button.button.alt.disabled, .et_button_no_icon.et_button_icon_visible.et_button_left.woocommerce-page input.button, .et_button_no_icon.et_button_icon_visible.et_button_left.woocommerce-page input.button.alt, .et_button_no_icon.et_button_icon_visible.et_button_left.woocommerce a.button, .et_button_no_icon.et_button_icon_visible.et_button_left.woocommerce a.button.alt, .et_button_no_icon.et_button_icon_visible.et_button_left.woocommerce button.button, .et_button_no_icon.et_button_icon_visible.et_button_left.woocommerce button.button.alt, .et_button_no_icon.et_button_icon_visible.et_button_left.woocommerce button.button.alt.disabled, .et_button_no_icon.et_button_icon_visible.et_button_left.woocommerce input.button, .et_button_no_icon.et_button_icon_visible.et_button_left.woocommerce input.button.alt, .et_button_no_icon.et_button_left .et_pb_button:hover, .et_button_no_icon.et_button_left.woocommerce #content input.button.alt:hover, .et_button_no_icon.et_button_left.woocommerce #content input.button:hover, .et_button_no_icon.et_button_left.woocommerce #respond input#submit.alt:hover, .et_button_no_icon.et_button_left.woocommerce #respond input#submit:hover, .et_button_no_icon.et_button_left.woocommerce-page #content input.button.alt:hover, .et_button_no_icon.et_button_left.woocommerce-page #content input.button:hover, .et_button_no_icon.et_button_left.woocommerce-page #respond input#submit.alt:hover, .et_button_no_icon.et_button_left.woocommerce-page #respond input#submit:hover, .et_button_no_icon.et_button_left.woocommerce-page a.button.alt:hover, .et_button_no_icon.et_button_left.woocommerce-page a.button:hover, .et_button_no_icon.et_button_left.woocommerce-page button.button.alt.disabled:hover, .et_button_no_icon.et_button_left.woocommerce-page button.button.alt:hover, .et_button_no_icon.et_button_left.woocommerce-page button.button:hover, .et_button_no_icon.et_button_left.woocommerce-page input.button.alt:hover, .et_button_no_icon.et_button_left.woocommerce-page input.button:hover, .et_button_no_icon.et_button_left.woocommerce a.button.alt:hover, .et_button_no_icon.et_button_left.woocommerce a.button:hover, .et_button_no_icon.et_button_left.woocommerce button.button.alt.disabled:hover, .et_button_no_icon.et_button_left.woocommerce button.button.alt:hover, .et_button_no_icon.et_button_left.woocommerce button.button:hover, .et_button_no_icon.et_button_left.woocommerce input.button.alt:hover, .et_button_no_icon.et_button_left.woocommerce input.button:hover, .et_button_no_icon .et_pb_button, .et_button_no_icon .et_pb_button:hover, .et_button_no_icon.woocommerce #content input.button, .et_button_no_icon.woocommerce #content input.button.alt, .et_button_no_icon.woocommerce #content input.button.alt:hover, .et_button_no_icon.woocommerce #content input.button:hover, .et_button_no_icon.woocommerce #respond input#submit, .et_button_no_icon.woocommerce #respond input#submit.alt, .et_button_no_icon.woocommerce #respond input#submit.alt:hover, .et_button_no_icon.woocommerce #respond input#submit:hover, .et_button_no_icon.woocommerce-page #content input.button, .et_button_no_icon.woocommerce-page #content input.button.alt, .et_button_no_icon.woocommerce-page #content input.button.alt:hover, .et_button_no_icon.woocommerce-page #content input.button:hover, .et_button_no_icon.woocommerce-page #respond input#submit, .et_button_no_icon.woocommerce-page #respond input#submit.alt, .et_button_no_icon.woocommerce-page #respond input#submit.alt:hover, .et_button_no_icon.woocommerce-page #respond input#submit:hover, .et_button_no_icon.woocommerce-page a.button, .et_button_no_icon.woocommerce-page a.button.alt, .et_button_no_icon.woocommerce-page a.button.alt:hover, .et_button_no_icon.woocommerce-page a.button:hover, .et_button_no_icon.woocommerce-page button.button, .et_button_no_icon.woocommerce-page button.button.alt, .et_button_no_icon.woocommerce-page button.button.alt.disabled, .et_button_no_icon.woocommerce-page button.button.alt.disabled:hover, .et_button_no_icon.woocommerce-page button.button.alt:hover, .et_button_no_icon.woocommerce-page button.button:hover, .et_button_no_icon.woocommerce-page input.button, .et_button_no_icon.woocommerce-page input.button.alt, .et_button_no_icon.woocommerce-page input.button.alt:hover, .et_button_no_icon.woocommerce-page input.button:hover, .et_button_no_icon.woocommerce a.button, .et_button_no_icon.woocommerce a.button.alt, .et_button_no_icon.woocommerce a.button.alt:hover, .et_button_no_icon.woocommerce a.button:hover, .et_button_no_icon.woocommerce button.button, .et_button_no_icon.woocommerce button.button.alt, .et_button_no_icon.woocommerce button.button.alt.disabled, .et_button_no_icon.woocommerce button.button.alt.disabled:hover, .et_button_no_icon.woocommerce button.button.alt:hover, .et_button_no_icon.woocommerce button.button:hover, .et_button_no_icon.woocommerce input.button, .et_button_no_icon.woocommerce input.button.alt, .et_button_no_icon.woocommerce input.button.alt:hover, .et_button_no_icon.woocommerce input.button:hover, .woocommerce input.button, .woocommerce input.button:hover {
+	padding: 16px 36px!important;
+}
